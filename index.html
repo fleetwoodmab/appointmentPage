@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bc6cfc169b.js" crossorigin="anonymous"></script>   
+    <title>Schedule Meeting</title>
+  </head>
+  <body>
+    <ul id="navbar">
+      <li>
+        <a href="index.html">
+        <img src="images/logo.svg" alt="web agency logo">
+        </a>
+      </li>
+    </ul>
+    <div id="wrapper">
+      <span id="circle">
+      <i class="fa-solid fa-calendar-days fa-4x custom_colour"></i>
+      </span>
+      <h1>Request an Appointment</h1>
+      <p>Answer the following questions to help us better understand your needs before we start talking.</p>
+      <div>
+        <form action="">
+          <div id="bemail">
+            <label for="bemail">Email</label>
+            <input type="email" class="in_bemail" name="bemail" placeholder="Enter your email">
+            <div id="error">Invalid email address.</div>
+          </div>
+          <div id="budget">
+            <label for="budget">Budget </label>
+            <select id="in_budget" name="budget">
+              <option value="none" disabled hidden selected>Select Budget</option>
+              <option value="<1000"> < 1000 €</option>
+              <option value="1000-2000">1000 - 2000 €</option>
+              <option value="2000-3000">2000 - 3000 €</option>
+              <option value="3000-6500">3000 - 6500 €</option>
+              <option value="6500-10000">6500 - 10 000€</option>
+              <option value=">10000"> > 10 000€</option>
+            </select>
+          </div>
+          <div id="solution">
+            <label for="solution">What service are you looking for ?</label>
+            <div class="flex-container">
+              <div class="flex-left">
+                <ul>
+                  <li><input type="radio" id="webdev" name="solution" value="webdev">
+                    <label for="webdev">Website Development</label>
+                  </li>
+                  <li><input type="radio" id="appdev" name="solution" value="appdev">
+                    <label for="appdev">App Development</label>
+                  </li>
+                  <li><input type="radio" id="uxui" name="solution" value="uxui">
+                    <label for="uxui">UX/UI Design</label>
+                  </li>
+                  <li><input type="radio" id="brandid" name="solution" value="brandid">
+                    <label for="brandid">Brand Identity</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="flex-right">
+                <ul>
+                  <li><input type="radio" id="seo" name="solution" value="seo">
+                    <label for="seo">SEO</label>
+                  </li>
+                  <li><input type="radio" id="data" name="solution" value="data">
+                    <label for="data">Data & Analytics</label>
+                  </li>
+                  <li><input type="radio" id="marketing" name="solution" value="marketing">
+                    <label for="marketing">Digital Marketing</label>
+                  </li>
+                  <li><input type="radio" id="copywriting" name="solution" value="copywriting">
+                    <label for="copywriting">Copywriting</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button type="button" id="submit"">Continue<i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
